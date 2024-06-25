@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "target": "ESNext",
+    "lib": ["dom", "dom.iterable", "esnext"]
+  },
+  "removeComments": true,
+  "preserveConstEnums": true
+}

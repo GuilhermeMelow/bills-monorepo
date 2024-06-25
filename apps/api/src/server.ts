@@ -1,15 +1,14 @@
 import express from "express";
-import { callMe } from "../../features/src";
+import { listBills } from "features/src/bills";
 
 const app = express();
 const port = 3000;
 
-app.get("/", async (req, res) => {
-  const result = await callMe();
+app.get("/", async (_, res) => {
+  const x: any = 1;
+  const result = await listBills();
 
-  console.log(result);
-
-  res.send("Hello World!");
+  res.send(result);
 });
 
 app.listen(port, () => {

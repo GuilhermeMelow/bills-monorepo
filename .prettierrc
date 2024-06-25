@@ -1,0 +1,17 @@
+{
+  "singleQuote": true,
+  "semi": false,
+  "plugins": [
+    "@ianvs/prettier-plugin-sort-imports",
+    "prettier-plugin-tailwindcss"
+  ],
+  "importOrder": [
+    "^react|^next|^clsx",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "^@/lib/",
+    "^@/features/|^@/components/|^@/hooks/",
+    "",
+    "^[./]"
+  ]
+}
